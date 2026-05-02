@@ -1,0 +1,22 @@
+name: Vercel Auto Deploy + Health Check
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run build (health check)
+        run: npm run build
+
+      - name: Notify build success
+        run: echo "Build passed - Vercel will auto-deploy"
