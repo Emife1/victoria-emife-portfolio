@@ -1,21 +1,5 @@
 # Victoria Emife Portfolio
 
-Cinematic AI-powered career portfolio system.
+CI Trigger Timestamp: 2026-05-02T00:00:00Z
 
-## Stack
-- Next.js 14
-- Supabase
-- OpenAI
-- Framer Motion
-- Composio
-- Vercel
-
-## Features
-- AI Career Assistant
-- Cinematic Portfolio Experience
-- Admin Dashboard
-- Contact Automation via Gmail
-- Analytics (PostHog)
-
-## Deployment
-Deploys on Vercel.
+This commit is used to trigger GitHub Actions pipeline and verify deployment flow.
