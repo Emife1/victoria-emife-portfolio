@@ -1,4 +1,4 @@
-name: Vercel Auto Deploy + Health Check
+name: Vercel Deploy (Locked Pipeline)
 
 on:
   push:
@@ -9,14 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Run build (health check)
+      - name: Build
         run: npm run build
-
-      - name: Notify build success
-        run: echo "Build passed - Vercel will auto-deploy"
