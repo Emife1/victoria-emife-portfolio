@@ -1,11 +1,10 @@
-import { askAI } from '@/lib/ai';
+import { NextResponse } from "next/server";
+import { generateAIResponse } from "@/lib/ai";
 
-export async function POST(req) {
+export async function POST(req: Request) {
   const { message } = await req.json();
 
-  const context = 'Marketing strategist, brand growth, and operations expertise.';
+  const result = await generateAIResponse(message);
 
-  const reply = await askAI(message, context);
-
-  return Response.json({ reply });
+  return NextResponse.json(result);
 }
