@@ -2,9 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  images: {
-    remotePatterns: []
-  }
+  generateBuildId: async () => String(Date.now())
 };
 
 module.exports = nextConfig;
