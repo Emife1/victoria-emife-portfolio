@@ -1,4 +1,4 @@
-name: Vercel Deploy (Locked Pipeline)
+name: Vercel Deploy (Stable Pipeline)
 
 on:
   push:
@@ -9,10 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build
         run: npm run build
