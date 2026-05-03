@@ -1,4 +1,3 @@
 # Victoria Emife Portfolio
 
-Build trigger update: missing modules restored.
-Push
+Trigger redeploy after module resolution fix.
