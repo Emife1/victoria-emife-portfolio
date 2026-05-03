@@ -1,1 +1,3 @@
-export default function TimelineScroller(){return <section></section>;}
+export default function TimelineScroller() {
+  return <section>Timeline</section>;
+}

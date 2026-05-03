@@ -1,1 +1,3 @@
-export default function ContactSection(){return <section></section>;}
+export default function ContactSection() {
+  return <section>Contact</section>;
+}

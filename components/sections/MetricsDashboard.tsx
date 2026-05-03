@@ -1,1 +1,3 @@
-export default function MetricsDashboard(){return <section></section>;}
+export default function MetricsDashboard() {
+  return <section>Metrics</section>;
+}

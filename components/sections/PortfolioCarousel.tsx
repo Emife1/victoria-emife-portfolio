@@ -1,1 +1,3 @@
-export default function PortfolioCarousel(){return <section></section>;}
+export default function PortfolioCarousel() {
+  return <section>Portfolio</section>;
+}
