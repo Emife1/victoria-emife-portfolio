@@ -1,3 +1,3 @@
 # Victoria Emife Portfolio
 
-Trigger redeploy after module resolution fix.
+Migrated to src architecture for stable builds.
